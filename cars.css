@@ -1,0 +1,88 @@
+body{ padding: 0;
+margin: 0;}
+ .test1{position: absolute;
+    top: 0;
+    height: 850px;
+    width: 100%;
+     background: linear-gradient(90deg, rgba(15, 31, 80, 0.863),rgba(241, 7, 46, 0.973) 290%)
+ }
+.test1 p{position: absolute;
+    top: 75px;
+    right: 64px;
+    font-size: 45px;
+    font-weight: bold;
+    stroke: 2px brown;
+    color: rgba(169, 169, 169, 0.801);
+
+}
+.test1 .image img{position: absolute;
+    left: 7%;
+    top: 15%;
+    width: 450px;
+    height: 230px;
+}
+.test1text{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 85%;
+    /* right: 23px; */
+    justify-content: space-between;
+    font-size: larger;
+    color: rgba(240, 248, 255, 0.568);
+}
+.left{padding: 42px;
+   
+}
+.right{padding: 0 42px;
+   
+}
+.test1text hr{
+    border: 2px solid rgba(240, 248, 255, 0.123);
+    ;
+}
+.test2{
+    position: absolute;
+    top: 850px;
+    height: 1000px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(20, 35, 82, 0.863),rgba(241, 7, 46, 0.781) 290%)
+}
+.test2 img{
+padding:99px ;
+    width: 380px;
+    height: 370px;
+    display: flex;
+    flex-direction: row; 
+}
+.test2 img:nth-child(2){
+    position: absolute;
+    right: 90px;
+    padding-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.behance.net/gallery/125252295/Tuning-Studio-Landing-Page-UXUI?tracking_source=search_projects%7Clanding%20page%20cars

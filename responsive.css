@@ -1,0 +1,252 @@
+@media screen and (max-width:810px) {
+    .header {
+        padding-left: 0;
+    }
+
+    .main1 .image img {
+        margin: 20px 0 0 32px;
+        height: 250px;
+        width: 320px;
+    }
+
+    .about {
+        display: flex !important;
+        flex-direction: column !important
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .logo {
+        padding-left: 12px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links a:hover::after {
+        width: 40%;
+
+    }
+
+    /* .lang {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .main1 {
+        display: flex !important;
+        flex-direction: column !important;
+        top: 540px;
+    }
+
+    .main1.image img {
+        /* left: 19px; */
+        height: 200px;
+        width: 290px;
+    }
+
+    .about {
+        top: 1100px;
+
+    }
+
+
+    .about .image img {
+        left: 21px;
+        height: 200px;
+        width: 290px;
+    }
+
+    .aboutText {
+        top: 440px;
+        padding: 12px;
+    }
+
+    .advantage {
+
+        top: 1800px;
+    }
+
+    .advantageHead {
+        margin-left: -8px;
+    }
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    hr {
+        margin-top: 69px;
+    }
+
+    .gridText {
+        padding-left: 12px;
+        margin: 0px;
+    }
+
+    .gridImg img {
+        /* padding:
+            20px; */
+        height: 50%;
+        width: 100%;
+    }
+
+    .service {
+        top: 3400px;
+
+    }
+
+    .serviceHead,
+    .teamHead,
+    .contactHead,
+    .customerHead {
+        margin-left: -8px;
+    }
+
+    .service .pixs img {
+        top: 250px;
+        left: 21px;
+        height: 200px;
+        width: 290px;
+    }
+
+    .serviceGrid {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 620px;
+        margin-left: 33px;
+        padding: 3px;
+        /* gap: 55px; */
+    }
+
+    .serviceGrid p {
+        height: 4%;
+        width: 118%;
+        margin-bottom: 22px;
+    }
+
+    .team {
+        top: 5500px;
+    }
+
+    .teamGrid {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .teamGrid .gridcontent {
+        left: 0px;
+    }
+
+    .teamHead span,
+    .advantage span {
+        font-size: 40px;
+    }
+
+    .customer {
+        top: 7200px;
+    }
+
+    .agent {
+        margin: 9px 21px;
+        left: 0;
+    }
+
+    .agent,
+    .client {
+        width: 65%;
+    }
+
+
+    .feedback {
+        top: 8600px;
+    }
+
+    .feedbackHead {
+        margin-right: 0;
+    }
+
+    .feedbackGrid {
+        display: flex;
+        flex-direction: column;
+        margin-left: 18px;
+    }
+
+    .nameinput,
+    .mailinput,
+    .commentinput {
+        width:
+            79%;
+    }
+
+    .question {
+        top: 9500px;
+    }
+
+    .questionInput {
+        margin-left: 8px;
+        left: 4px;
+    }
+
+    .name,
+    .mail {
+        width: 60%;
+    }
+
+    .contact {
+        top: 10300px;
+        /* margin-left: -18px; */
+    }
+
+    .contact h4,
+    .address span,
+    .phone span {
+        font-size: 26px;
+    }
+
+    .phone,
+    .address {
+        margin-left: 19px;
+
+    }
+
+    .address h2 {
+        font-size: 35px;
+    }
+
+    .footer {
+        top: 11300px;
+        width: 100%;
+    }
+
+    .footer .logo {
+        position: absolute;
+        width: 30px;
+        width: 30px;
+        left: 0px;
+    }
+
+    .links,
+    .cars {
+        margin-top: 100px;
+        display: flex;
+    }
+
+    .footer .networks {
+        position: absolute;
+        margin: 22px 0;
+        top: 550px;
+        left: 0px;
+    }
+
+    cite {
+        top: 650px;
+        margin-bottom: 33px;
+        padding: 22px;
+    }
+}
