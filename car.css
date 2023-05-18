@@ -1,22 +1,28 @@
 /* CAR.HTML */
-body {
+* {
   padding: 0;
   margin: 0;
+
+  }
+  
+  body {
   background-color: rgba(2, 2, 15, 0.904);
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
+  height: 90px;
   color: white;
-  padding-top: 35px;
+  padding-top: 10px ;
+  z-index: 999;
 }
 
 .logo {
   display: flex;
-  padding-left: 17px;
+  /* padding-left: 22px; */
 }
 
 .links {
@@ -27,16 +33,14 @@ body {
 .links a {
   position: relative;
   /* padding: 5px; */
-  margin: 7px;
+  margin: 4px;
   text-decoration: none;
   color: white;
-  font-size: 20px;
+  font-size: 19px;
   transition: all 0.3s ease;
 }
 
 .links a:hover {
-  /* border: 1px solid white; */
-  border-radius: 23px;
   transition: all 0.3s ease;
 
 }
@@ -44,7 +48,6 @@ body {
 .links a:hover::after {
   position: absolute;
   content: "";
-  top: 26px;
   bottom: 0px;
   width: 70%;
   height: 2px;
@@ -55,12 +58,12 @@ body {
 
 .lang {
   display: flex;
-  margin: -20px 12px;
+  margin-left: 74px;
 }
 
 .lang h3 {
-  cursor: pointer;
   position: relative;
+  cursor: pointer;
   padding: 10px;
 }
 
@@ -68,7 +71,8 @@ body {
   position: absolute;
   content: "";
   top: 39px;
-  width: 50%;
+  left: 12px;
+  width: 50%;  
   height: 1px;
   background-color: rgb(100, 201, 169);
   left: 12px;
@@ -77,29 +81,27 @@ body {
 
 .main1 {
   display: flex;
-  position: absolute;
-  top: 230px;
-  left: 32px;
+  justify-content: space-around;
   color: white;
-  padding: 45px auto;
-  max-width: 1200px;
-
+  height: 700;
+  width: 100%;
+  padding-top: 172px;
 }
-
-
-/* .main1 h3 */
-span {
+.main1 .main1Content h3, .main1 .main1Content span{
   font-size: 45px;
   color: rgba(50, 241, 241, 0.685);
+  text-align: center      ;
 }
 
-.main1 p {
+.main1 .main1Content p {
+  margin: 19px auto;
+  text-align: center      ;
+
   color: rgba(220, 220, 220, 0.562);
 }
 
-.main1 p:nth-child(3) {
+.main1 .main1Content p:nth-child(3) {
   color: white;
-  /* border: 2px solid cyan; */
   background: rgb(12, 115, 233);
   box-shadow: 9px 4px 15px 7px rgba(12, 115, 233, 0.205);
   padding: 23px;
@@ -111,19 +113,14 @@ span {
   cursor: pointer;
 }
 
-.main1 p:nth-child(3):hover {
+.main1 .main1Content p:nth-child(3):hover {
   transition: all 0.3s ease;
   opacity: 0.5;
 }
 
-.main1 .image {
-  right: 8px;
-}
-
 .main1 .image img {
-  margin-left: 340px;
   height: 400px;
-  width: 590px;
+  width: 500px;
   border-radius: 49%;
   object-fit: fill;
 }
@@ -131,29 +128,19 @@ span {
 /* about */
 .about {
   display: flex;
-  position: absolute;
-  top: 759px;
+  justify-content: space-around;
   width: 100%;
-  padding: 45px auto;
+  height: 700px;
+  padding-top: 45px ;
 
 }
 
-.about .image img {
-  position: absolute;
-  left: 725px;
-  top: 280px;
-  height: 420px;
-  width: 500px;
-  border-radius: 69%;
-  object-fit: contain;
-}
 
 .aboutHead {
   position: absolute;
   right: 0;
-  top: 59px;
+  /* margin-bottom: 62px ; */
   padding: 40px;
-  margin-right: 70px;
 }
 
 .aboutHead h1 {
@@ -163,27 +150,38 @@ span {
 }
 
 .aboutHead span {
-
-  font-size: 55px;
+    font-size: 55px;
   color: rgba(50, 241, 241, 0.685);
 }
-
+.about .aboutContent{ 
+  margin-top:160px;
+  display: flex;
+justify-content: space-around;
+margin: auto;
+width: 100%;
+}
+.about .image  {margin: auto 22px ;}
+  .about .image img {
+     height: 420px;
+  width: 500px;
+  border-radius: 69%;
+  object-fit: contain;
+}
 .aboutText {
-  position: absolute;
-  left: 39px;
-  padding-top: 25px;
-  /* margin-left: 55px; */
+  margin: auto 22px;
+  padding-top: 5px;
   color: rgba(255, 255, 255, 0.349);
-  top: 230px;
   font-size: 20px;
+}
+.aboutText p {
+    margin: auto;
+
 }
 
 /* advantage */
 .advantage {
-  position: absolute;
-  padding: 66px auto;
-  top: 1539px;
   width: 100%;
+  height: 1050px;
 }
 
 hr {
@@ -192,12 +190,8 @@ hr {
 }
 
 .advantageHead {
-  position: absolute;
-  /* left:630px; */
-  left: 0;
-  top: 79px;
-  padding: 20px;
-  margin-left: 70px;
+  padding: 30px;
+  margin: 70px;
 }
 
 .advantage h1 {
@@ -207,29 +201,28 @@ hr {
 }
 
 .advantage span {
-
   font-size: 55px;
   color: rgba(50, 241, 241, 0.685);
 }
 
 .gridContainer {
   display: grid;
-  position: relative;
-  top: 149px;
-  margin: 55px;
-  padding: 25px;
+justify-content:center;
+ margin: 12px;
   grid-template-columns: 1fr 1fr;
-  gap: 55px;
-  text-align: justify;
+
 }
 
 .grid {
   display: flex;
-  border-right: 1px solid rgba(48, 135, 146, 0.432);
-  padding: 10px;
-  margin: 0 auto;
+  justify-content: space-evenly;
+  padding: 7px;
+    width: 400px;
+    height: 250px;
+    margin: 10px;
   cursor: pointer;
-
+  border: 3px solid rgba(29, 29, 31, 0.473);
+    border-right: 3px solid rgba(48, 135, 146, 0.432);
 }
 
 .grid:hover {
@@ -239,8 +232,10 @@ hr {
 }
 
 .gridImg img {
-  height: 50%;
-  width: 70%;
+  margin: 2px;
+  height: 250px;
+    width: 180px;
+    margin-right: 12px;
 }
 
 .gridText {
@@ -249,21 +244,19 @@ hr {
 }
 
 .gridText h3 {
+  font-size: 22px;
   color: white;
+  margin-bottom: 12px;
 }
 
-/* service */
+            /* service */
 .service {
-  position: absolute;
   padding: 66px auto;
-  top: 2499px;
   width: 100%;
+  height: 1900px;
 }
 
 .service>.pixs img {
-  position: absolute;
-  top: 125px;
-  right: 20%;
   height: 350px;
   width: 490px;
   margin-left: 12px;
@@ -272,9 +265,6 @@ hr {
 }
 
 .serviceHead {
-  position: absolute;
-  left: 0;
-  top: 79px;
   padding: 40px;
   margin-left: 70px;
 }
@@ -291,31 +281,25 @@ hr {
 }
 
 .serviceText {
-  position: relative;
-  top: 456px;
-  padding-left: 49px;
+     margin-left: 49px;
   color: white;
 }
 
 .serviceGrid {
-  position: relative;
-  top: 470px;
-  display: grid;
+    display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 57px;
-  margin-left: 145px;
+  gap: 17px;
+  margin: 30px auto auto 145px;
 }
 
 .serviceGrid p {
-  position: relative;
-  top: 23px;
   background-color: rgb(16, 53, 83);
   color: white;
   text-align: center;
-  padding: 9px;
-  /* margin: 12px; */
-  height: 4%;
-  width: 50%;
+  padding: 19px;
+  margin: 16px;
+  height: 22px;
+  width: 150px;
   border-bottom-right-radius: 70px;
   border-bottom-left-radius: 7px;
   border-top-left-radius: 70px;
@@ -333,19 +317,13 @@ hr {
 
 /* team */
 .team {
-  position: absolute;
-  padding: 66px auto;
-  top: 4079px;
   width: 100%;
+  height: 900px;
 }
 
 .teamHead {
-  position: absolute;
-  /* left:630px; */
-  left: 0;
-  top: 79px;
-  padding: 40px;
-  margin-left: 70px;
+    padding: 60px;
+  /* margin-left: 70px; */
 }
 
 .teamHead h1 {
@@ -361,16 +339,19 @@ hr {
 }
 
 .gridText p {
+  font-size: 25px;
   color: rgba(245, 239, 239, 0.664);
 }
 
 .teamGrid {
-  position: relative;
-  top: 290px;
-  display: flex;
+    display: flex;
+    justify-content:center;
+    margin-left: -50px;
   text-align: center;
-  margin-left: 59px;
-  /* padding: 25px 35px; */
+}
+.teamGrid .gridcontent {
+  justify-content: center;
+  margin: 12px;
 }
 
 .teamgridImg img {
@@ -378,27 +359,23 @@ hr {
   height: 250px;
   width: 290px;
   border-radius: 50%;
-  margin: 0 30px;
   object-fit: fill;
 }
 
-.gridText h3 {
+.gridText h2 {
+  font-size: 33px;
   color: rgba(50, 241, 241, 0.685);
 }
 
 /* customer */
 .customer {
-  position: absolute;
-  padding: 66px auto;
-  top: 5009px;
-  width: 100%;
+   /* padding:auto; */
+   width: 100%;
+   height: 900px;
 }
 
 .customerHead {
-  position: absolute;
-  left: 0;
-  top: 79px;
-  padding: 40px;
+   padding-top:   40px;
   margin-left: 70px;
 }
 
@@ -409,21 +386,19 @@ hr {
 }
 
 .customerHead span {
-  font-size: 55px;
+  font-size:z 55px;
   color: rgba(50, 241, 241, 0.685);
 }
 
 .chat {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 45px;
-}
+justify-content: center;
+margin: auto;}
 
 .agent {
   position: relative;
-  top: 335px;
-  left: 734px;
+  top: 225px;
+  left: 584px;
   background-color: rgba(172, 255, 47, 0.363);
   box-shadow: 4px 2px 11px 2px rgba(172, 255, 47, 0.233);
   border-top-left-radius: 70px;
@@ -442,9 +417,9 @@ hr {
 }
 
 .client {
-  position: relative;
-  top: 335px;
-  left: 74px;
+   position: relative;
+  top: 20px;
+  left: 44px; 
   background-color: rgba(59, 149, 233, 0.171);
   box-shadow: 4px 2px 11px 2px rgba(59, 149, 233, 0.171);
   border-top-left-radius: 70px;
@@ -453,7 +428,7 @@ hr {
   border-bottom-right-radius: 70px;
   color: white;
   text-align: justify;
-  padding: 17px;
+  padding: 22px;
   height: 2%;
   width: 30%;
 }
@@ -471,17 +446,12 @@ hr {
 
 /* FEEDBACK */
 .feedback {
-  position: absolute;
   padding: 66px auto;
-  top: 6409px;
   width: 100%;
+  height: 900px;
 }
 
 .feedbackHead {
-  position: absolute;
-  /* left:630px; */
-  right: 0;
-  top: 79px;
   padding: 40px;
   margin-right: 70px;
 }
@@ -500,8 +470,8 @@ hr {
 .feedbackGrid {
   display: grid;
   position: relative;
-  top: 227px;
-  margin-left: 89px;
+  top: 200px;
+  margin-left: 70px;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -551,9 +521,9 @@ hr {
   width: 120%;
 }
 
-.feedback h4 {
+.feedback h3 {
   color: white;
-  margin-left: 13px;
+  margin: 13px;
 }
 
 .feedback h5 {
@@ -586,17 +556,13 @@ textarea {
 
 /* question */
 .question {
-  position: absolute;
   padding: 66px auto;
-  top: 7209px;
   width: 100%;
+  height: 900px;
+
 }
 
 .questionHead {
-  position: absolute;
-  /* left:630px; */
-  left: 0;
-  top: 79px;
   padding: 40px;
   margin-right: 70px;
 }
@@ -616,11 +582,14 @@ textarea {
   position: absolute;
   left: 47%;
   margin-right: 285px;
+  justify-content: space-around;
 }
 
-.question p {
+.question .space p {
   position: relative;
   top: 274px;
+  margin: auto;text-align: center;
+  font-size: 33px;
   color: white;
 }
 
@@ -658,11 +627,11 @@ textarea {
   width: 75%;
 }
 
-.question h4 {
+.question h3 {
   position: relative;
   top: 279px;
   color: white;
-  margin-left: 13px;
+  margin: 13px;
 }
 
 .question #cons {
@@ -697,19 +666,12 @@ textarea {
 
 /* contact */
 .contact {
-  position: absolute;
-  padding: 66px auto;
-  top: 8109px;
   width: 100%;
+  height: 600px;
 }
 
 .contactHead {
-  position: absolute;
-  /* left:630px; */
-  left: 0;
-  top: 79px;
   padding: 40px;
-  margin-right: 70px;
 }
 
 .contactHead h1 {
@@ -724,41 +686,38 @@ textarea {
 }
 
 .address {
-  position: relative;
-  top: 295px;
-  margin-left: 94px;
+  margin:auto 94px;
+ font-size: 25px;
   color: white;
 }
 
 .address span {
-  font-size: 15px;
+  font-size: 20px;
   color: rgba(50, 241, 241, 0.685);
 }
 
 .phone {
-  position: relative;
-  top: 345px;
-  margin-left: 94px;
+  font-size: 20px;
+  margin: 22px 94px;
   color: white;
 }
 
 .phone span {
-  font-size: 15px;
+  font-size: 25px;
   color: rgba(50, 241, 241, 0.685);
 }
 
 
 /* Footer  */
 .footer {
-  position: absolute;
   display: flex;
   justify-content: space-around;
-  max-width: 1259px;
-  width: 100%;
+  margin: auto;
+    width: 100%;
   color: white;
-  padding: 56px 10px;
-  top: 8909px;
+  padding-top: 36px;
   background: linear-gradient(10deg, rgba(7, 7, 49, 0.26), rgba(37, 6, 6, 0.377) 120%);
+height: 400px;
 }
 
 .footer .logo {
@@ -803,29 +762,29 @@ textarea {
 .footer .cars h3 {
   cursor: pointer;
   position: relative;
-  padding: 2px;
+  padding: 10px;
+}
+.footer p{
+  font-size: 25px;
 }
 
-
-
-.links a:hover:after {
-  left: 10px;
-  top: 31px;
-}
 
 .cars h3:hover::after {
   position: absolute;
   content: "";
-  top: 27px;
-  width: 50%;
+  top: 29px;
+  width: 12%;
   height: 1px;
   background-color: rgb(100, 201, 169);
-  left: 2px;
+  left: 12px;
   transition: all 0.3s ease;
 }
 
 cite {
-  position: absolute;
-  top: 500px;
-  left: 25px;
+  width: 100%;
+    height: 800px;
+}
+cite h3{
+  padding: 22px;
+color: white;
 }

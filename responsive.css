@@ -1,252 +1,325 @@
-@media screen and (max-width:810px) {
-    .header {
-        padding-left: 0;
-    }
-
-    .main1 .image img {
-        margin: 20px 0 0 32px;
-        height: 250px;
-        width: 320px;
-    }
-
-    .about {
-        display: flex !important;
-        flex-direction: column !important
-    }
+@media screen and (max-width:1000px) {
+  .team{height: 1800px;}
+  .team .teamGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    justify-content: center;
+  }
+  .customer .agent{
+    left: 544px;
+ 
+  }
 }
+@media screen and (max-width: 880px) {
+ 
+  .main1 .image img {
+    width: 250px;
+    height: 250px;
+  }
+  .advantage{
+    height: 1600px;
+  }
+  .advantage .gridContainer{
+grid-template-columns: 1fr; 
+justify-content: center;
+margin: 102px;
+ }
+ .customer .agent{
+  left: 444px;
 
-@media screen and (max-width: 470px) {
-    .logo {
-        padding-left: 12px;
-    }
+}
+.feedback .feedbackGrid {
+grid-template-columns: 1fr;
 
-    .links {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .links a:hover::after {
-        width: 40%;
-
-    }
-
-    /* .lang {
-        display: flex;
-        flex-direction: column;
-    } */
-
+}
+.feedback .commentinput {
+width: 90%;
+}
+.question .questionInput {
+left: 19%;}}
+@media screen and (max-width: 800px) {
+  .about .aboutContent{
+    display: grid;}
+}
+@media screen and (max-width: 770px) {
+  .header{
+justify-content: space-between;
+margin-left: 22px;}
+  .main1 {
+    justify-content: center;
+  }
+  .links {
+    position: fixed;
+text-align: right;
+right: 0;    
+display: grid;
+  }
+  .links a:hover::after {
+    display: none;
+  }
+  
     .main1 {
-        display: flex !important;
-        flex-direction: column !important;
-        top: 540px;
-    }
-
-    .main1.image img {
-        /* left: 19px; */
-        height: 200px;
-        width: 290px;
-    }
-
-    .about {
-        top: 1100px;
-
-    }
-
-
-    .about .image img {
-        left: 21px;
-        height: 200px;
-        width: 290px;
-    }
-
-    .aboutText {
-        top: 440px;
-        padding: 12px;
-    }
-
-    .advantage {
-
-        top: 1800px;
-    }
-
-    .advantageHead {
-        margin-left: -8px;
-    }
-
-    .gridContainer {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    hr {
-        margin-top: 69px;
-    }
-
-    .gridText {
-        padding-left: 12px;
-        margin: 0px;
-    }
-
-    .gridImg img {
-        /* padding:
-            20px; */
-        height: 50%;
-        width: 100%;
-    }
-
-    .service {
-        top: 3400px;
-
-    }
-
-    .serviceHead,
-    .teamHead,
-    .contactHead,
-    .customerHead {
-        margin-left: -8px;
-    }
-
-    .service .pixs img {
-        top: 250px;
-        left: 21px;
-        height: 200px;
-        width: 290px;
-    }
-
-    .serviceGrid {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        top: 620px;
-        margin-left: 33px;
-        padding: 3px;
-        /* gap: 55px; */
-    }
-
-    .serviceGrid p {
-        height: 4%;
-        width: 118%;
-        margin-bottom: 22px;
-    }
-
-    .team {
-        top: 5500px;
-    }
-
-    .teamGrid {
-        margin-left: 0px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .teamGrid .gridcontent {
-        left: 0px;
-    }
-
-    .teamHead span,
-    .advantage span {
-        font-size: 40px;
-    }
-
-    .customer {
-        top: 7200px;
-    }
-
-    .agent {
-        margin: 9px 21px;
-        left: 0;
-    }
-
-    .agent,
-    .client {
-        width: 65%;
-    }
-
-
-    .feedback {
-        top: 8600px;
-    }
-
-    .feedbackHead {
-        margin-right: 0;
-    }
-
-    .feedbackGrid {
-        display: flex;
-        flex-direction: column;
-        margin-left: 18px;
-    }
-
-    .nameinput,
-    .mailinput,
-    .commentinput {
-        width:
-            79%;
-    }
-
-    .question {
-        top: 9500px;
-    }
-
-    .questionInput {
-        margin-left: 8px;
-        left: 4px;
-    }
-
-    .name,
-    .mail {
-        width: 60%;
-    }
-
-    .contact {
-        top: 10300px;
-        /* margin-left: -18px; */
-    }
-
-    .contact h4,
-    .address span,
-    .phone span {
-        font-size: 26px;
-    }
-
-    .phone,
-    .address {
-        margin-left: 19px;
-
-    }
-
-    .address h2 {
-        font-size: 35px;
-    }
-
-    .footer {
-        top: 11300px;
-        width: 100%;
-    }
-
-    .footer .logo {
-        position: absolute;
-        width: 30px;
-        width: 30px;
-        left: 0px;
-    }
-
-    .links,
-    .cars {
-        margin-top: 100px;
-        display: flex;
-    }
-
-    .footer .networks {
-        position: absolute;
-        margin: 22px 0;
-        top: 550px;
-        left: 0px;
-    }
-
-    cite {
-        top: 650px;
-        margin-bottom: 33px;
-        padding: 22px;
+      padding-top: 270px;
+    display: grid;
+  }
+  .about .aboutContent{
+    padding-top: 62px;
+    margin: auto;}
+    .service .serviceGrid {
+      justify-content: center;
+      margin: auto;
     }
 }
+@media screen and (max-width:720px) {
+  .customer {
+      height: 1000px;}    .customer .agent{
+
+    top:333px;
+    left: 304px;
+ 
+  }
+  .question .questionInput {
+    left: 10%;}
+    .footer .logo img{
+      width: 30px;
+      height: 30px;
+    }
+      .footer .logo h1{
+      font-size: 13px;
+    }
+    .footer .cars p, .footer .networks p{
+      font-size: 15px;
+    }
+    .footer .cars h3{
+      font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 525px) {
+  .about .aboutContent .image img{
+    margin: auto;
+  }
+    .about .aboutContent .image img{
+    width: 290px;
+    height: 250px;
+  }
+  .advantage{
+    height: 1200px;
+  }
+  .advantage .advantageHead{ margin: auto;}
+  .advantage .advantageHead span{ 
+   font-size: 32px; margin: auto;}
+  .advantage .gridContainer{  margin: auto;}
+  .advantage .gridContainer .grid {  
+    width: 270px;
+    height: 180px;
+    margin: 22px auto;  }
+
+.advantage .gridContainer .grid .gridImg img{
+  width: 100px;
+  height: 150px;
+}
+.advantage .gridContainer .grid .gridText p  { 
+  font-size: 12px; 
+}
+
+.service>.pixs img {
+  width: 300px;
+}
+.service .serviceGrid {
+  justify-content: center;
+  margin: auto;
+}
+.service .serviceGrid p {
+  justify-content: center;
+  margin: auto;
+    width: 130px;
+    height: 40px;
+    padding: 12px;
+    margin: 12px;
+
+}
+.team .teamHead span{
+  font-size: 42px;
+}
+.customer {
+  height: 1500px;}
+.customer .agent{
+  top: 425px;
+  left: 224px;
+
+}
+.client:last-of-type {
+margin-top: 64px;}
+
+
+.feedback .feedbackGrid {
+  margin-left: 10px;
+}
+.question .questionInput {
+  left: 2%;}
+  .question .mailinput,.question .nameinput {
+    width: 55%;}}
+
+@media screen and (max-width:450px) {
+  .feedback .feedbackGrid {
+margin-left: 42px;  }
+  .feedback .feedbackGrid .nameinput {
+  width: 55%;}
+  .feedback .feedbackGrid .mailinput {
+  width: 65%;}
+  .feedback .feedbackGrid .commentinput {
+  width: 70%;}
+  .question .mailinput,.question .nameinput {
+    width: 45%;}
+}
+
+@media screen and (max-width:410px) {
+  .customer .agent{
+    top: 533px;
+    left: 150px;
+
+  }
+  .client:last-of-type {
+margin-top: 99px;  }
+.question .mailinput,.question .nameinput {
+  width: 35%;}
+  .team .teamHead span{font-size: 35px;}
+}
+@media screen and (max-width:380px) {
+  
+      .main1 .image{
+      margin-left:  44px;
+    }
+    hr{
+      margin-top: 32px;
+    }
+    .advantage .gridContainer .grid {  
+      width: 200px;
+      height: 180px;
+      margin: 22px auto;    }
+    .advantage .gridContainer .grid .gridImg img{
+      width: 90px;
+      height: 150px;
+    }
+    .service{
+      height: 2200px;
+    }
+    .service .pixs img{
+      width: 150px;
+      height: 150px;
+    }
+    .service .serviceHead h1, .service .serviceHead span{
+margin-left: -19px;    }
+    .service .serviceHead span{ font-size: 35px;}
+    .service .serviceGrid {
+      grid-template-columns: 1fr;
+margin-left: 42px;    
+    }
+    .team .teamHead span {font-size: 32px;}
+    .feedback .feedbackHead span{font-size: 42px;}
+    .question .questionHead span{
+      font-size: 42px;
+    }
+    .question .mailinput,.question .nameinput {
+      width: 15%;}
+    .contact .contactHead span {
+    font-size: 42px;    
+    }   
+  .footer {
+    flex-direction: column;
+padding-left: 22px;    height: 400px;
+  } }
+@media screen and (max-width:320px) {
+  .header .logo img {
+    width: 50px;
+    height: 50px;
+  }
+    .header .logo h1 {
+    font-size: 15px;
+    padding-top: 22px;
+  }
+  .main1 .image{
+    margin: auto;
+  }
+  .about .aboutHead{
+    text-align: center;
+margin-bottom: 22px; 
+ }
+ .team .teamHead span {
+  font-size: 25px;
+ }
+ .team .teamGrid .teamgridImg img {
+  width: 190px;
+ }
+ .customer .agent{
+  top: 603px;
+  left: 110px;
+
+}
+.client:last-of-type {
+margin-top: 129px;  }
+.contact{
+  height: 790px;
+}
+
+}
+  @media screen and (max-width:290px) {
+    .main1 .main1Content p:nth-child(3) {
+      width: 130px;
+    height: 29px;
+    padding:12px ;
+   }
+   .main1 .image img{
+width: 200px;
+height: 200px;
+   }
+   .about .aboutHead span{
+    text-align: center;
+margin: auto auto 42px; 
+font-size: 42px; }
+  .about .aboutContent .image img{
+    width: 220px;
+    height: 210px;
+    margin-top: 42px;
+  }
+  .advantage .advantageHead span{ 
+    font-size: 29px; margin: auto;}
+    .advantage .gridContainer .grid {
+      margin: 22px auto; }
+      .advantage .gridContainer .grid .gridText h3  { 
+        font-size: 12px; 
+  }
+  .service .serviceHead h1, .service .serviceHead span{
+    margin-left: -39px;    }
+    .team .teamHead span{
+      font-size: 22px;
+    }
+    .customer {
+      height: 1970px;}
+    .customer .agent{
+      top: 643px;
+      left: 110px;
+    
+    }
+    .customer .client{
+      top:5px;
+    }
+    .client:last-of-type {
+    margin-top: 120px;  }
+    .feedback .feedbackHead span{font-size: 32px;}
+    .question .questionHead span{
+      font-size: 32px;
+    }
+    .question .mailinput,.question .nameinput  {
+      width: 5%;}
+      .question #cons{
+        width: 120px;
+      }
+      .contact .contactHead span {
+        font-size: 32px;    
+        } 
+  }
+
+  
